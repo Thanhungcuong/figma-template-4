@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phương Đông landing</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <link
+      rel="shortcut icon"
+      href="public/logo_favicon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- fixed -->
+    <header class="bg-white drop-shadow-xl top-0 left-0 right-0 z-10">
+      <div class="container mx-auto flex justify-between items-center py-3">
+        <div class="cursor-pointer">
+          <img src="public/logo.png" alt="logo" />
+        </div>
+        <div>
+          <ul
+            class="menu-desktop max-xl:hidden justify-center gap-5 flex items-center static transition-all ease-in duration-500 w-full left-0 xl:py-0 py-4 xl:pl-0"
+          >
+            <li
+              class="nav-item max-xl:hover:text-white max-xl:hover:bg-green-500 text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:py-5 xl:my-5 max-xl:text-base"
+            >
+              <a href="#">Giới thiệu</a>
+            </li>
+            <li
+              class="nav-item max-xl:hover:text-white max-xl:hover:bg-green-500 text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:py-5 xl:my-5 max-xl:text-base"
+            >
+              <a href="#">Đối tượng khách hàng</a>
+            </li>
+            <li
+              class="nav-item max-xl:hover:text-white max-xl:hover:bg-green-500 text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:py-5 xl:my-5 max-xl:text-base"
+            >
+              <a href="#">Quy trình</a>
+            </li>
+            <li
+              class="nav-item max-xl:hover:text-white max-xl:hover:bg-green-500 text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:py-5 xl:my-5 max-xl:text-base"
+            >
+              <a href="#">Bảng giá</a>
+            </li>
+            <li
+              class="nav-item max-xl:hover:text-white max-xl:hover:bg-green-500 text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:py-5 xl:my-5 max-xl:text-base"
+            >
+              <a href="#">Cảm nhận của khách hàng</a>
+            </li>
+            <li
+              class="nav-item max-xl:hover:text-white max-xl:hover:bg-green-500 text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:py-5 xl:my-5 max-xl:text-base :"
+            >
+              <a href="#">Đội ngũ bác sĩ</a>
+            </li>
+            <li
+              class="nav-item max-xl:hover:text-white max-xl:hover:bg-green-500 text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:py-5 xl:my-5 max-xl:text-base"
+            >
+              <a href="#">Hình ảnh & Video</a>
+            </li>
+
+            <!--đây là header, gồm icon và menu -->
+          </ul>
+        </div>
+        <div class="max-xl:hidden">
+          <a
+            href="tel:+19001806"
+            class="group flex justify-center items-center bg-gradient-to-b from-[#FFB469] to-[#E57709] text-white rounded-full font-Lato text-base font-bold leading-19 tracking-0 hover:bg-gradient-to-br hover:from-[#F9CB9C] hover:to-[#FF9900] hover:text-orange-900 shadow-lg shadow-orange-500/40 w-40 h-10 text-nowrap shrink-0 max-xl:mx-auto max-xl:mt-4 transition-all duration-500 ease-linear"
+          >
+            <span class="bg-white size-7 rounded-full flex mr-2">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="mx-auto my-auto"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M15.8041 13.842L14.8266 12.8645C14.3383 12.3761 13.5466 12.3761 13.0591 12.8645L12.2908 13.6328C12.1191 13.8045 11.8591 13.862 11.6375 13.7645C10.5241 13.277 9.42415 12.5378 8.44331 11.557C7.46665 10.5803 6.72998 9.4853 6.24165 8.37613C6.13998 8.14697 6.19915 7.8778 6.37665 7.7003L7.06498 7.01197C7.62415 6.4528 7.62415 5.66197 7.13581 5.17363L6.15831 4.19613C5.50748 3.5453 4.45248 3.5453 3.80165 4.19613L3.25831 4.73863C2.64081 5.35613 2.38331 6.24697 2.54998 7.1303C2.96165 9.3078 4.22665 11.692 6.26748 13.7328C8.30831 15.7736 10.6925 17.0386 12.87 17.4503C13.7533 17.617 14.6441 17.3595 15.2616 16.742L15.8041 16.1995C16.455 15.5486 16.455 14.4936 15.8041 13.842V13.842Z"
+                  stroke="#E57709"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10.8333 5.82599C11.6924 5.81433 12.5558 6.13266 13.2116 6.78849"
+                  stroke="#E57709"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15.5683 4.43188C14.2608 3.12438 12.5466 2.47021 10.8333 2.47021"
+                  stroke="#E57709"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14.1742 9.16691C14.1858 8.30774 13.8675 7.44441 13.2117 6.78857"
+                  stroke="#E57709"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15.5684 4.43164C16.8759 5.73914 17.53 7.45331 17.53 9.16664"
+                  stroke="#E57709"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+
+            Gọi 1900 1806</a
+          >
+        </div>
+
+        <button class="xl:hidden text-3xl hover:text-linear-green btn-menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <!-- Menu moblie -->
+      <div
+        class="menu-moblie fixed inset-y-0 h-screen left-0 -translate-x-[120%] sm:w-fit duration-700 ease-linear z-50"
+      >
+        <ul>
+          <li>
+            <a href="/" title="logo-mobile">
+              <img src="public/logo.png" width="175" height="39" alt="" />
+            </a>
+            <i
+              class="far fa-caret-square-left icon text-3xl text-white hover:text-main cursor-pointer btn-close ml-4"
+            ></i>
+          </li>
+          <li><a href="#">Giới thiệu</a></li>
+          <li><a href="#">Đối tượng khách hàng</a></li>
+          <li><a href="#">Quy trình</a></li>
+          <li><a href="#">Bảng giá</a></li>
+          <li><a href="#">Cảm nhận của khách hàng</a></li>
+          <li><a href="#">Đội ngũ bác sĩ</a></li>
+          <li><a href="#">Hình ảnh & Video</a></li>
+          <li>
+            <a href="tel:+1900 1806"> Liên hệ | 1900 1806 </a>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="fixed inset-0 h-screen translate-x-full duration-500 ease-linear bg-black/30 z-40 block hidden bg-over-menu"
+      ></div>
+    </header>
+
+    <main></main>
+    <div
+      class="bg-no-repeat bg-cover h-[20rem]"
+      style="background-image: url(public/bgfooter.png)"
+    >
+      <div class="container mx-auto w-1/2 rounded-2xl overflow-hidden">
+        <div class="bg-bgbg">
+          <p>Đăng ký tư vấn miễn phí</p>
+          <p>
+            Đặt hẹn ngay để nhận tư vấn và chúng tôi sẽ xếp lịch khám kịp thời!
+          </p>
+        </div>
+        <form class="bg-white grid grid-rows-4 grid-flow-col gap-4">
+          <div><input type="text" class="border-slate-300 border" /></div>
+          <div><input type="text" class="border-slate-300 border" /></div>
+          <div><input type="text" class="border-slate-300 border" /></div>
+          <div><input type="text" class="border-slate-300 border" /></div>
+          <textarea class="row-span-2 border-slate-300 border"></textarea>
+          <div>
+            <input type="checkbox" required />
+            <p>Tôi không phải người máy</p>
+          </div>
+          <input type="submit" />
+        </form>
+      </div>
+    </div>
+    <footer class="h-[30rem] flex items-center">
+      <div
+        class="flex justify-between items-center container my-auto mx-auto text-white"
+      >
+        <div class="flex-col w-1/5">
+          <div><img src="public/Logofooter.png" alt="Logofooter" /></div>
+          <p class="font-bold text-base mt-6 mb-2">
+            Bệnh viện đa khoa phương đông
+          </p>
+          <p class="text-wrap">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna sit
+            morbi nisl contale consectetur pellentesque ullamcorper con viverra
+            id cursus hendreritenim ultricies
+          </p>
+        </div>
+        <div class="flex-col">
+          <p class="font-bold text-xl">Thông tin liên hệ</p>
+          <div class="flex gap-1 mt-6 mb-3">
+            <p class="font-normal text-base text-nowrap">Địa chỉ:</p>
+            <p class="font-bold text-base text-wrap">
+              Số 9, Phố Viên, P. Cổ Nhuế 2, Q. Bắc Từ Liêm, HN
+            </p>
+          </div>
+          <div class="flex gap-1 my-3">
+            <p class="font-normal text-base">Email:</p>
+            <a
+              href="mailto:bvphuongdong@phuongdonghospital.vn"
+              class="font-bold text-base max-sm:text-sm max-sm:my-auto hover:text-black duration-500 transition-all ease-in-out"
+            >
+              bvphuongdong@phuongdonghospital.vn
+            </a>
+          </div>
+          <a
+            href="mailto:info.benhvienphuongdong@gmail.com"
+            class="hover:text-black font-bold my-3"
+            >info.benhvienphuongdong@gmail.com</a
+          >
+          <div class="flex gap-1 text-nowrap">
+            <p class="font-normal text-base">Tổng đài tư vấn:</p>
+            <a
+              href="tel:+1900 1806"
+              class="font-bold text-base hover:text-black duration-500 transition-all ease-in-out"
+              >1900 1806</a
+            >
+          </div>
+        </div>
+        <div class="flex-col w-1/5">
+          <p class="font-bold text-xl">Giờ làm việc</p>
+          <p class="mt-6 mb-4">
+            Từ <span>7:00 - 19:00</span> từ <span>Thứ 2 đến CN</span>
+          </p>
+          <div class="flex gap-1 text-nowrap">
+            <p class="font-normal text-base">Cấp cứu 24/7:</p>
+            <a
+              href="tel:+0833 015 115"
+              class="font-bold text-base hover:text-black duration-500 transition-all ease-in-out"
+              >0833 015 115</a
+            >
+          </div>
+          <div class="flex gap-1 text-nowrap">
+            <p class="font-normal text-base my-4">Hotline Tiêm chủng:</p>
+            <a
+              href="tel:+0911615115"
+              class="font-bold text-base hover:text-black duration-500 transition-all ease-in-out my-4"
+              >0911 615 115</a
+            >
+          </div>
+          <div class="flex gap-1 text-nowrap">
+            <p class="font-normal text-base">Hotline Hỗ trợ khách hàng:</p>
+            <a
+              href="tel:+ 1900 1806"
+              class="font-bold text-base hover:text-black duration-500 transition-all ease-in-out"
+            >
+              1900 1806</a
+            >
+          </div>
+        </div>
+        <div class="flex-col w-1/5">
+          <p class="font-bold text-xl">Theo dõi chúng tôi</p>
+          <div class="flex my-6 gap-6">
+            <div
+              class="size-10 rounded-full bg-white flex justify-center items-center"
+            >
+              <img src="public/fb.svg" alt="icon fb" />
+            </div>
+
+            <div
+              class="size-10 rounded-full bg-white flex justify-center items-center"
+            >
+              <img src="public/ytb.svg" alt="icon ytb" />
+            </div>
+            <div
+              class="size-10 rounded-full bg-white flex justify-center items-center"
+            >
+              <img src="public/tiktok.svg" alt="icon fb" />
+            </div>
+          </div>
+          <span><img src="public/bocongthuong.png" alt="bocongthuong" /></span>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/72f20fd50b.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+
+  <script>
+    let toggleMenu = document.querySelector(".menu-moblie");
+    let btnMenu = document.querySelector(".btn-menu");
+    let bgOverMenu = document.querySelector(".bg-over-menu");
+    let btnClose = document.querySelector(".btn-close");
+
+    const buttons = [btnMenu, bgOverMenu, btnClose];
+
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        toggleMenu.classList.toggle("-translate-x-[120%]");
+        bgOverMenu.classList.toggle("translate-x-full");
+      });
+    });
+  </script>
+</html>

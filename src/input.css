@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: "Lato";
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+input[type="text"]:focus {
+  border: none !important;
+  outline: none !important;
+  outline-offset: 0;
+  box-shadow: none;
+  border-color: transparent;
+}
+
+input[type="tel"]:focus {
+  border: none !important;
+  outline: none !important;
+  outline-offset: 0;
+  box-shadow: none;
+  border-color: transparent;
+}
+
+input[type="email"]:focus {
+  border: none !important;
+  outline: none !important;
+  outline-offset: 0;
+  box-shadow: none;
+  border-color: transparent;
+}
+
+textarea:focus {
+  border: none !important;
+  outline: none !important;
+  outline-offset: 0;
+  box-shadow: none !important;
+  border-color: transparent;
+}
+/* .menu-moblie */
+.menu-moblie {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px rgba(53, 222, 127, 0.4);
+}
+
+/* .menu-moblie li */
+.menu-moblie li {
+  padding: 8px 16px; /* Thay thế px-2 py-3 */
+  border-bottom: 2px solid #ccc; /* Thay thế border-b-2 */
+  background: white;
+}
+
+/* .menu-moblie li:first-child */
+.menu-moblie li:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(
+    135deg,
+    #ffb469 0%,
+    #e57709 100%
+  ); /* Thay thế first:bg-linear-Yellow-Green */
+}
+
+ul.menu-desktop li {
+  position: relative;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
+ul.menu-desktop li:hover {
+  background-image: linear-gradient(135deg, #999999 0%, #000000 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+ul.menu-desktop li::before {
+  position: absolute;
+  bottom: -0.75rem;
+  left: 0px;
+  display: block;
+  height: 0.25rem;
+  width: 0;
+  background-image: linear-gradient(135deg, #999999 0%, #000000 100%);
+  transition-property: all;
+  transition-duration: 500ms;
+  content: var(--tw-content);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+ul.menu-desktop li:hover::before {
+  content: var(--tw-content);
+  width: 100%;
+}
+
+footer {
+  background: var(--dd-400, linear-gradient(90deg, #50c577 0%, #2dbefc 100%));
+}
+
+p span {
+  font-weight: bold;
+}
