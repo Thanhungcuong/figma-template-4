@@ -16,37 +16,6 @@ body {
   padding: 0;
 }
 
-input[type="text"]:focus {
-  border: none !important;
-  outline: none !important;
-  outline-offset: 0;
-  box-shadow: none;
-  border-color: transparent;
-}
-
-input[type="tel"]:focus {
-  border: none !important;
-  outline: none !important;
-  outline-offset: 0;
-  box-shadow: none;
-  border-color: transparent;
-}
-
-input[type="email"]:focus {
-  border: none !important;
-  outline: none !important;
-  outline-offset: 0;
-  box-shadow: none;
-  border-color: transparent;
-}
-
-textarea:focus {
-  border: none !important;
-  outline: none !important;
-  outline-offset: 0;
-  box-shadow: none !important;
-  border-color: transparent;
-}
 /* .menu-moblie */
 .menu-moblie {
   display: flex;
@@ -115,4 +84,88 @@ footer {
 
 p span {
   font-weight: bold;
+}
+
+.my-div {
+  border-radius: 400px 0px 400px 10px;
+}
+.image-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h3 span {
+  background: var(--dd-400, linear-gradient(90deg, #50c577 0%, #2dbefc 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Lato;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.form1 {
+  border: 1px solid var(--dd-400, #50c577);
+}
+
+.form1 input {
+  color: var(--Neutral-Place-Holder, #888);
+  text-align: justify;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: none;
+  margin-left: 2rem;
+}
+input[type="text"]:focus {
+  outline: none !important;
+  outline-offset: 0;
+  box-shadow: none;
+  border-color: #2891cc;
+}
+
+input[type="tel"]:focus {
+  outline: none !important;
+  outline-offset: 0;
+  box-shadow: none;
+  border-color: #2891cc;
+}
+
+input[type="email"]:focus {
+  outline: none !important;
+  outline-offset: 0;
+  box-shadow: none;
+  border-color: #2891cc;
+  border-color: ;
+}
+
+textarea:focus {
+  outline: none !important;
+  outline-offset: 0;
+  box-shadow: none !important;
+  border-color: #2891cc;
+}
+
+input[type="date"]:focus {
+  outline: none !important;
+  outline-offset: 0;
+  box-shadow: none;
+  border-color: #2891cc;
+}
+
+.form2 label {
+  color: var(--dd-mau-logo, #2891cc);
+  /* Body/Roboto/Label */
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 133.333% */
+  letter-spacing: 0.4px;
 }

@@ -6,6 +6,9 @@ module.exports = {
       backgroundImage: {
         "bgbg": "linear-gradient(90deg, #50C577 0%, #2DBEFC 100%)",
       },
+      colors: {
+        'bode': '#EBEBEB',
+      },
     },
   },
   plugins: [],
