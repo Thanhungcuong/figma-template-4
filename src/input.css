@@ -90,11 +90,6 @@ p span {
   border-radius: 400px 0px 400px 10px;
 }
 
-@media (max-width: 767px) {
-  .my-div {
-    border-radius: 0;
-  }
-}
 .image-container {
   position: absolute;
   left: 50%;
@@ -211,4 +206,59 @@ input[type="date"]:focus {
   height: 228px;
   flex-shrink: 0;
   border-radius: 45px 10px 10px 10px;
+}
+
+@media only screen and (max-width: 400px) {
+  .imgslide {
+    width: 219px;
+    height: 151px;
+  }
+}
+
+.buttons:hover {
+  background: var(--dd-400, linear-gradient(90deg, #50c577 0%, #2dbefc 100%));
+}
+
+.buttons:hover svg {
+  stroke: white;
+}
+
+.divbg {
+  width: 1397px;
+  height: 1660px;
+  flex-shrink: 0;
+  border-radius: 460px 0px 460px 8px;
+  opacity: 0.05;
+  background: var(--dd-400, linear-gradient(90deg, #50c577 0%, #2dbefc 100%));
+}
+
+.orangebutton:hover {
+  background: var(--dd-400, linear-gradient(90deg, #50c577 0%, #2dbefc 100%));
+  color: black;
+}
+
+.divs {
+  width: 344px;
+  height: 210px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  border: 1px solid var(--Neutral-Stroke, #cccccc);
+  background: var(--Neutral-White, #ebebeb);
+  text-align: center;
+}
+
+.divs hover {
+  background: white;
+}
+
+@media only screen and (max-width: 900px) {
+  .divs {
+    width: 266px;
+  }
+}
+.blabla {
+  width: 110px;
+  height: 10px;
+  transform: rotate(-0.433deg);
+  flex-shrink: 0;
 }
