@@ -186,10 +186,9 @@ input[type="date"]:focus {
   height: 32rem !important;
 }
 
-.swiper-slide {
+.slide1 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
   border-radius: 50px 10px;
   background: var(--dd-400, linear-gradient(90deg, #50c577 0%, #2dbefc 100%));
   height: 358px;
@@ -197,8 +196,16 @@ input[type="date"]:focus {
   line-height: 358px;
 }
 
-.swiper .swiper-slide:nth-child(2n) {
+.slide1 .swiper-slide:nth-child(2n) {
   margin-top: 112px;
+}
+.Swiper2 .swiper-slide {
+  text-align: center;
+  background: #fff;
+  height: 485px;
+  width: 328px;
+  line-height: 358px;
+  border-radius: 80px 10px 15px 15px;
 }
 
 .imghalf {
@@ -237,16 +244,6 @@ input[type="date"]:focus {
   color: black;
 }
 
-.divs {
-  width: 344px;
-  height: 210px;
-  flex-shrink: 0;
-  border-radius: 15px;
-  border: 1px solid var(--Neutral-Stroke, #cccccc);
-  background: var(--Neutral-White, #ebebeb);
-  text-align: center;
-}
-
 .divs hover {
   background: white;
 }
@@ -261,4 +258,13 @@ input[type="date"]:focus {
   height: 10px;
   transform: rotate(-0.433deg);
   flex-shrink: 0;
+}
+
+.xanhnhat {
+  border-radius: 80px 10px 80px 0px;
+  background: var(--dd-200, linear-gradient(90deg, #9ddcb0 0%, #84d0fd 100%));
+}
+
+.divdiv {
+  border-radius: 300px 10px;
 }
