@@ -5,6 +5,13 @@ html,
 body {
   position: relative;
   height: 100%;
+  --accent: #0c465d;
+  --accent-light: #edfaff;
+  --status-success: rgb(127, 255, 144);
+  --status-warning: rgb(255, 150, 127);
+
+  --transition-duration-timing-to: 500ms ease-out;
+  --transition-duration-timing-from: 500ms ease-out;
 }
 
 body {
@@ -191,9 +198,6 @@ input[type="date"]:focus {
   font-size: 18px;
   border-radius: 50px 10px;
   background: var(--dd-400, linear-gradient(90deg, #50c577 0%, #2dbefc 100%));
-  height: 358px;
-  width: 328px;
-  line-height: 358px;
 }
 
 .slide1 .swiper-slide:nth-child(2n) {
@@ -267,4 +271,143 @@ input[type="date"]:focus {
 
 .divdiv {
   border-radius: 300px 10px;
+}
+
+@media (max-width: 640px) {
+  .divdiv {
+    border-radius: 0; /* Loại bỏ bo góc cho breakpoint nhỏ hơn hoặc bằng sm */
+  }
+}
+.img__full img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+@media (max-width: 640px) {
+  .img__full img {
+    height: 5rem; /* Chiều cao mong muốn khi dưới sm */
+  }
+}
+
+.accordion {
+  /* Apply border radius to the parent container... */
+  border-radius: 8px;
+  /* ...and set overflow hidden to crop its children so the boder remains visibel */
+  overflow: hidden;
+
+  &:has(.accordion-toggle:focus-visible),
+  &:has(.accordion-toggle:focus) {
+  }
+}
+
+.accordion-toggle {
+  padding: 0.5em 1em;
+  margin-bottom: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  cursor: pointer;
+
+  /* Make its children not clickable so only the <summary> element can be clicked */
+  & > * {
+    pointer-events: none;
+  }
+
+  &:focus-visible,
+  &:focus,
+  &:hover,
+  .accordion:has(.accordion-panel[expanded]) & {
+    filter: brightness(140%);
+  }
+}
+
+.btn-icon {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  background-color: var(--accent-light);
+  border-radius: 100vmax;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+
+    height: 4px;
+    width: calc(100% - 0.75em);
+
+    background-color: var(--accent);
+  }
+  &::after {
+    rotate: 90deg;
+  }
+  .accordion:has(.accordion-panel[expanded]) &::before,
+  .accordion:has(.accordion-panel[expanded]) &::after {
+    rotate: 180deg;
+  }
+
+  /* The prefers-reduced-motion feature query detects whether the user has requested the operating system to minimize the amount of animation or motion it uses */
+  @media (prefers-reduced-motion: no-preference) {
+    &::before,
+    &::after {
+      /* Transition from '-' to '+' (ONLY IF overriden by an other transition property in the expanded state) */
+      transition: rotate var(--transition-duration-timing-from);
+    }
+    /* Transition from '+' to -' */
+    .accordion:has(.accordion-panel[expanded]) &::before,
+    .accordion:has(.accordion-panel[expanded]) &::after {
+      transition: rotate var(--transition-duration-timing-to);
+    }
+  }
+}
+
+.accordion-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  /* Make the collapsed accordion-panel container not accessible to screen reader (contrary to 'display: none, the 'visibility' property can be animated */
+  visibility: hidden;
+  /* Also add opacity transition for better visual effect */
+  opacity: 0;
+
+  /* Use a custom attribute (dynamically added/removed with JavaScript) to enable CSS transitions between the accordion states */
+  &[expanded] {
+    grid-template-rows: 1fr;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  /* The prefers-reduced-motion feature query detects whether the user has requested the operating system to minimize the amount of animation or motion it uses */
+  @media (prefers-reduced-motion: no-preference) {
+    /* Transition from expanded to collapsed (ONLY IF overriden by an other transition property in the expanded state) */
+    transition: grid-template-rows var(--transition-duration-timing-from),
+      visibility var(--transition-duration-timing-from),
+      opacity var(--transition-duration-timing-from);
+
+    /* Transition from collapsed to expanded */
+    &[expanded] {
+      transition: grid-template-rows var(--transition-duration-timing-to),
+        visibility var(--transition-duration-timing-to),
+        opacity var(--transition-duration-timing-to);
+    }
+  }
+}
+
+.accordion-drawer {
+  color: var(--primary-dark);
+  background-color: var(--accent-light);
+  overflow: hidden;
+}
+
+/* Additional div to add padding to the content without messing with the animation */
+.accordion-content {
+  padding: 1em;
+
+  p {
+    text-align: left;
+  }
 }
