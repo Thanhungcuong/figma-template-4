@@ -550,8 +550,6 @@ video {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 1rem;
-  padding-left: 1rem;
 }
 
 @media (min-width: 640px){
@@ -935,6 +933,10 @@ video {
   width: 100%;
 }
 
+.w-\[12rem\]{
+  width: 12rem;
+}
+
 .w-\[13rem\]{
   width: 13rem;
 }
@@ -966,10 +968,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-\[12rem\]{
-  width: 12rem;
 }
 
 .shrink-0{
@@ -1282,6 +1280,10 @@ video {
 
 .pr-3{
   padding-right: 0.75rem;
+}
+
+.pr-4{
+  padding-right: 1rem;
 }
 
 .pt-14{
@@ -1828,7 +1830,7 @@ input[type="date"]:focus {
 .accordion-panel {
   display: grid;
   grid-template-rows: 0fr;
-  /* Make the collapsed accordion-panel container not accessible to screen reader (contrary to 'display: none, the 'visibility' property can be animated */
+  /* Make the collapsed accordion-panel    not accessible to screen reader (contrary to 'display: none, the 'visibility' property can be animated */
   visibility: hidden;
   /* Also add opacity transition for better visual effect */
   opacity: 0;
@@ -1909,13 +1911,17 @@ details {
   /* Màu và chiều rộng của border bottom */
 }
 
+.container p,
+h3 {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
 @media not all and (min-width: 1024px){
   .max-lg\:container{
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 1rem;
-    padding-left: 1rem;
   }
 
   @media (min-width: 640px){
@@ -1928,8 +1934,6 @@ details {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 1rem;
-    padding-left: 1rem;
   }
 
   @media (min-width: 640px){
@@ -1948,8 +1952,6 @@ details {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 1rem;
-    padding-left: 1rem;
   }
 
   @media (min-width: 640px){
@@ -1974,8 +1976,6 @@ details {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 1rem;
-    padding-left: 1rem;
   }
 
   @media (min-width: 640px){
@@ -2006,8 +2006,6 @@ details {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 1rem;
-    padding-left: 1rem;
   }
 
   @media (min-width: 640px){
@@ -2136,14 +2134,6 @@ details {
     width: 9rem;
   }
 
-  .max-xl\:w-\[11rem\]{
-    width: 11rem;
-  }
-
-  .max-xl\:w-\[10rem\]{
-    width: 10rem;
-  }
-
   .max-xl\:flex-col{
     flex-direction: column;
   }
@@ -2215,6 +2205,10 @@ details {
     width: 100%;
   }
 
+  .max-lg\:w-\[11rem\]{
+    width: 11rem;
+  }
+
   .max-lg\:w-\[40\%\]{
     width: 40%;
   }
@@ -2225,10 +2219,6 @@ details {
 
   .max-lg\:w-full{
     width: 100%;
-  }
-
-  .max-lg\:w-\[11rem\]{
-    width: 11rem;
   }
 
   .max-lg\:rounded-none{
@@ -2252,6 +2242,10 @@ details {
   .max-md\:flex-col{
     flex-direction: column;
   }
+
+  .max-md\:flex-wrap{
+    flex-wrap: wrap;
+  }
 }
 
 @media not all and (min-width: 640px){
@@ -2261,14 +2255,6 @@ details {
 
   .max-sm\:relative{
     position: relative;
-  }
-
-  .max-sm\:left-\[10\%\]{
-    left: 10%;
-  }
-
-  .max-sm\:top-\[35\%\]{
-    top: 35%;
   }
 
   .max-sm\:mx-4{
@@ -2425,18 +2411,6 @@ details {
     margin-right: 2rem;
   }
 
-  .sm\:w-1\/2{
-    width: 50%;
-  }
-
-  .sm\:w-2\/3{
-    width: 66.666667%;
-  }
-
-  .sm\:w-\[45\%\]{
-    width: 45%;
-  }
-
   .sm\:w-\[82\%\]{
     width: 82%;
   }
@@ -2485,10 +2459,6 @@ details {
     width: 50%;
   }
 
-  .md\:w-2\/3{
-    width: 66.666667%;
-  }
-
   .md\:w-\[45\%\]{
     width: 45%;
   }
@@ -2523,12 +2493,12 @@ details {
     width: 50%;
   }
 
-  .lg\:w-\[calc\(50\%-50px\)\]{
-    width: calc(50% - 50px);
-  }
-
   .lg\:w-2\/3{
     width: 66.666667%;
+  }
+
+  .lg\:w-\[calc\(50\%-50px\)\]{
+    width: calc(50% - 50px);
   }
 }
 

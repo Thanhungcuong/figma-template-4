@@ -366,7 +366,7 @@ input[type="date"]:focus {
 .accordion-panel {
   display: grid;
   grid-template-rows: 0fr;
-  /* Make the collapsed accordion-panel container not accessible to screen reader (contrary to 'display: none, the 'visibility' property can be animated */
+  /* Make the collapsed accordion-panel    not accessible to screen reader (contrary to 'display: none, the 'visibility' property can be animated */
   visibility: hidden;
   /* Also add opacity transition for better visual effect */
   opacity: 0;
@@ -440,4 +440,10 @@ input[type="date"]:focus {
 details {
   border-top: 2px solid #ebebeb; /* Màu và chiều rộng của border top */
   border-bottom: 2px solid #ebebeb; /* Màu và chiều rộng của border bottom */
+}
+
+.container p,
+h3 {
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
