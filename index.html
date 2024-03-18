@@ -18,7 +18,7 @@
   </head>
   <body>
     <!-- fixed -->
-    <header class="bg-white drop-shadow-xl top-0 left-0 right-0 z-50">
+    <header class="bg-white drop-shadow-xl fixed top-0 left-0 right-0 z-50">
       <div class="container mx-auto flex justify-between items-center py-3">
         <div class="cursor-pointer">
           <img src="public/logo.png" alt="logo" />
@@ -155,7 +155,7 @@
         </ul>
       </div>
       <div
-        class="fixed inset-0 h-screen translate-x-full duration-500 ease-linear bg-black/30 z-40 block hidden bg-over-menu"
+        class="fixed inset-0 h-screen translate-x-full duration-500 ease-linear bg-black/30 z-40 block bg-over-menu"
       ></div>
     </header>
 
@@ -181,7 +181,7 @@
         </div>
         <div class="container relative py-8">
           <div class="flex flex-col lg:h-[887px] lg:w-1/2">
-            <div class="flex flex-col items-center my-auto z-50 max-sm:">
+            <div class="flex flex-col items-center my-auto max-sm:">
               <p class="font-bold text-6xl text-[#252525]">
                 Hãy để đôi mắt là cửa sổ của tâm hồn
               </p>
@@ -250,21 +250,23 @@
         </div>
       </section1>
       <section2 class="relative">
-        <div class="absolute bottom-0 right-[40%] translate-y-[100%]">
+        <div
+          class="absolute bottom-0 right-[40%] translate-y-[133%] max-lg:hidden"
+        >
           <img src="public/icontronxanh.png" alt="o xanh" />
         </div>
-        <div class="absolute top-1/2 right-[10%]">
+        <div class="absolute top-1/2 right-[10%] max-lg:hidden">
           <img src="public/icondau+.png" alt="dau +" />
         </div>
         <div
-          class="container pl-10 max-sm:pr-10 mx-auto flex max-sm:flex-col justify-around xl:mt-28"
+          class="container pl-10 max-sm:pr-10 mx-auto flex max-md:flex-col justify-around xl:mt-28"
         >
-          <div class="sm:w-[45%]">
-            <p class="sm:w-2/3 mr-auto font-bold text-4xl text-[#252525]">
+          <div class="md:w-[45%]">
+            <p class="lg:w-2/3 mr-auto font-bold text-4xl text-[#252525]">
               Tầm quan trọng của việc sử dụng kính Ortho-K
             </p>
           </div>
-          <div class="sm:w-1/2">
+          <div class="md:w-1/2">
             <p
               class="font-normal text-base text-[#454545] sm:w-[86%] max-sm:mt-4"
             >
@@ -678,7 +680,7 @@
       </section3>
       <section4 class="relative flex flex-col">
         <div
-          class="lg:absolute max-lg:relative max-lg:container max-lg:w-[100%] inset-y-0 right-0 lg:w-[calc(50%-50px)] bg-bgbg my-div max-lg:rounded-none overflow-hidden h-[56rem] max-xl:mt-[13rem] max-sm:h-[30rem]"
+          class="lg:absolute max-lg:relative max-lg:container max-lg:w-[100%] inset-y-0 right-0 lg:w-[calc(50%-50px)] bg-bgbg my-div max-lg:rounded-none overflow-hidden h-[56rem] max-sm:h-[30rem]"
         >
           <span
             class="z-10 absolute right-0 bottom-0 max-lg:mx-auto max-lg:my-auto"
@@ -700,7 +702,7 @@
               ></div>
             </div>
             <div
-              class="absolute top-[40%] left-[12%] max-sm:top-[35%] max-sm:left-[10%] mt-10 bg-gradient-to-b from-[#FFB469] to-[#E57709] rounded-full w-[13rem] max-sm:mx-auto orangebutton max-2xl:w-[10rem] max-xl:w-[9rem] max-2xl:mt-3"
+              class="absolute top-[40%] max-lg:top-[43%] left-[12%] mt-10 bg-gradient-to-b from-[#FFB469] to-[#E57709] rounded-full w-[12rem] max-sm:mx-auto orangebutton max-2xl:w-[10rem] max-xl:w-[9rem] max-lg:w-[11rem] max-2xl:mt-3 max-sm:hidden"
             >
               <button
                 class="flex h-[3rem] justify-around mx-auto items-center gap-2 text-white font-bold text-base hover:text-black transition-all ease-in duration-500"
@@ -746,7 +748,7 @@
           <div class="absolute bottom-0 left-0 translate-y-[100%]">
             <img src="public/icontronxanh.png" alt="o xanh" />
           </div>
-          <div class="absolute top-0 left-0">
+          <div class="absolute top-[5%] left-0">
             <img src="public/icondau+.png" alt="dau +" />
           </div>
           <div class="flex flex-col items-center lg:w-1/2 pt-[8rem]">
@@ -766,7 +768,9 @@
                 vượt trội sau
               </p>
             </div>
-            <div class="grid grid-cols-2 max-sm:flex max-sm:flex-col gap-8">
+            <div
+              class="grid grid-cols-2 max-sm:flex max-sm:flex-col gap-8 max-sm:mx-4"
+            >
               <div
                 class="p-2 shadow-md sm:odd:mb-12 sm:even:mt-12 hover:bg-white rounded-2xl overflow-hidden text-center border border-[#cccccc]"
               >
@@ -1015,7 +1019,7 @@
             </div>
           </div>
           <div
-            class="z-10 flex flex-row-reverse justify-between absolute top-1/2 w-full"
+            class="z-10 flex flex-row-reverse justify-between max-sm:justify-around absolute top-1/2 w-full"
           >
             <div
               class="next-22 bg-white buttons rounded-full size-14 flex justify-center items-center stroke-[#888888]"
@@ -1080,7 +1084,7 @@
             <img src="public/tamgiacchambi.png" alt="tamgiacchambi" />
           </div>
         </div>
-        <div class="container relative pb-[6rem] pt-[15rem]">
+        <div class="container relative pb-[6rem] sm:pt-[15rem]">
           <div class="w-2/5 max-xl:w-3/5 max-sm:w-full">
             <p class="ml-10 text-white font-bold text-4xl mb-10">
               Cảm nhận của khách hàng sau khi sử dụng dịch vụ
@@ -1445,18 +1449,18 @@
         </div>
       </section6>
       <section7 class="">
-        <div class="container flex justify-center pt-14 pb-10 divide-y-2">
-          <div class="w-1/2">
+        <div class="container flex justify-center pt-14 pb-10 max-xl:flex-col">
+          <div class="xl:w-1/2">
             <p class="font-bold text-4xl text-[#252525] w-fit mx-auto">
               Những câu hỏi thường gặp
             </p>
-            <div>
+            <div class="">
               <details class="accordion p-2">
                 <summary class="accordion-toggle">
                   <p class="text-lg font-semibold">
                     Cách phân biệt giữa cảm cúm thông thường và covid-19?
                   </p>
-                  <span class="btn-icon" aria-hidden="true"></span>
+                  <span class="btn-icon shrink-0" aria-hidden="true"></span>
                 </summary>
                 <div class="accordion-panel">
                   <div class="accordion-drawer">
@@ -1479,7 +1483,7 @@
                   <p class="text-lg font-semibold">
                     Cách phân biệt giữa cảm cúm thông thường và covid-19?
                   </p>
-                  <span class="btn-icon" aria-hidden="true"></span>
+                  <span class="btn-icon shrink-0" aria-hidden="true"></span>
                 </summary>
                 <div class="accordion-panel">
                   <div class="accordion-drawer">
@@ -1502,7 +1506,7 @@
                   <p class="text-lg font-semibold">
                     Cách phân biệt giữa cảm cúm thông thường và covid-19?
                   </p>
-                  <span class="btn-icon" aria-hidden="true"></span>
+                  <span class="btn-icon shrink-0" aria-hidden="true"></span>
                 </summary>
                 <div class="accordion-panel">
                   <div class="accordion-drawer">
@@ -1525,7 +1529,7 @@
                   <p class="text-lg font-semibold">
                     Cách phân biệt giữa cảm cúm thông thường và covid-19?
                   </p>
-                  <span class="btn-icon" aria-hidden="true"></span>
+                  <span class="btn-icon shrink-0" aria-hidden="true"></span>
                 </summary>
                 <div class="accordion-panel">
                   <div class="accordion-drawer">
@@ -1548,7 +1552,7 @@
                   <p class="text-lg font-semibold">
                     Cách phân biệt giữa cảm cúm thông thường và covid-19?
                   </p>
-                  <span class="btn-icon" aria-hidden="true"></span>
+                  <span class="btn-icon shrink-0" aria-hidden="true"></span>
                 </summary>
                 <div class="accordion-panel">
                   <div class="accordion-drawer">
@@ -1571,7 +1575,7 @@
                   <p class="text-lg font-semibold">
                     Cách phân biệt giữa cảm cúm thông thường và covid-19?
                   </p>
-                  <span class="btn-icon" aria-hidden="true"></span>
+                  <span class="btn-icon shrink-0" aria-hidden="true"></span>
                 </summary>
                 <div class="accordion-panel">
                   <div class="accordion-drawer">
@@ -1594,7 +1598,7 @@
                   <p class="text-lg font-semibold">
                     Cách phân biệt giữa cảm cúm thông thường và covid-19?
                   </p>
-                  <span class="btn-icon" aria-hidden="true"></span>
+                  <span class="btn-icon shrink-0" aria-hidden="true"></span>
                 </summary>
                 <div class="accordion-panel">
                   <div class="accordion-drawer">
@@ -1617,7 +1621,7 @@
                   <p class="text-lg font-semibold">
                     Cách phân biệt giữa cảm cúm thông thường và covid-19?
                   </p>
-                  <span class="btn-icon" aria-hidden="true"></span>
+                  <span class="btn-icon shrink-0" aria-hidden="true"></span>
                 </summary>
                 <div class="accordion-panel">
                   <div class="accordion-drawer">
@@ -1640,7 +1644,7 @@
                   <p class="text-lg font-semibold">
                     Cách phân biệt giữa cảm cúm thông thường và covid-19?
                   </p>
-                  <span class="btn-icon" aria-hidden="true"></span>
+                  <span class="btn-icon shrink-0" aria-hidden="true"></span>
                 </summary>
                 <div class="accordion-panel">
                   <div class="accordion-drawer">
@@ -1660,8 +1664,64 @@
               </details>
             </div>
           </div>
-          <div class="w-1/2">
-            <span><img src="public/goiorthoK.png" alt="goiorthoK" /></span>
+          <div class="xl:w-1/2">
+            <p class="font-bold text-4xl w-fit mx-auto">
+              Bảng giá dịch vụ gói Ortho-K
+            </p>
+            <div thumbsSlider="" class="swiper SwiperT1 my-6">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <p class="font-semibold text-lg text-[#888888]">
+                    ORTHO K - 01
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <p class="font-semibold text-lg text-[#888888]">
+                    ORTHO K - 02
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <p class="font-semibold text-lg text-[#888888]">
+                    ORTHO K - 03
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <p class="font-semibold text-lg text-[#888888]">
+                    ORTHO K - 04
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <p class="font-semibold text-lg text-[#888888]">
+                    ORTHO K - 05
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              style="
+                --swiper-navigation-color: #fff;
+                --swiper-pagination-color: #fff;
+              "
+              class="swiper SwiperT2"
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide rounded-3xl overflow-hidden">
+                  <img width="100%" src="public/goiorthoK.png" />
+                </div>
+                <div class="swiper-slide rounded-3xl overflow-hidden">
+                  <img width="100%" src="public/goiOrthoK02.png" />
+                </div>
+                <div class="swiper-slide rounded-3xl overflow-hidden">
+                  <img width="100%" src="public/goiOrthoK03.png" />
+                </div>
+                <div class="swiper-slide rounded-3xl overflow-hidden">
+                  <img width="100%" src="public/goiOrthoK04.png" />
+                </div>
+                <div class="swiper-slide rounded-3xl overflow-hidden">
+                  <img width="100%" src="public/goiOrthoK05.png" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section7>
@@ -1681,7 +1741,7 @@
               Đăng ký tư vấn miễn phí
             </p>
             <p
-              class="flex justify-center font-medium text-base max-sm:text-center max-sm:mx-auto max-sm:w-[90%]"
+              class="flex justify-center font-medium text-base max-lg:text-center max-sm:mx-auto max-sm:w-[90%]"
             >
               Đặt hẹn ngay để nhận tư vấn và chúng tôi sẽ xếp lịch khám kịp
               thời!
@@ -2072,5 +2132,36 @@
         { once: true }
       );
     }
+    var swiper = new Swiper(".SwiperT1", {
+      freeMode: true,
+      watchSlidesProgress: true,
+      breakpoints: {
+        // Cấu hình cho màn hình có độ rộng 1280 pixel trở lên
+
+        // Cấu hình cho màn hình có độ rộng 576 pixel trở lên
+        1536: {
+          slidesPerView: 5, // Số lượng slide hiển thị khi màn hình có độ rộng từ 576 pixel trở lên
+          spaceBetween: 10, //
+        },
+        // Cấu hình cho màn hình có độ rộng ít hơn pixel
+        1024: {
+          slidesPerView: 5, //
+          spaceBetween: 10, //
+        },
+        768: {
+          slidesPerView: 5, //
+          spaceBetween: 10, //
+        },
+        0: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+      },
+    });
+    var swiper2 = new Swiper(".SwiperT2", {
+      thumbs: {
+        swiper: swiper,
+      },
+    });
   </script>
 </html>
