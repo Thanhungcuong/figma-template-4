@@ -20,7 +20,7 @@ body {
 
 body {
   background: #eee;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato";
   font-size: 14px;
   color: #000;
   margin: 0;
@@ -249,7 +249,6 @@ input[type="date"]:focus {
 
 .orangebutton:hover {
   background: var(--dd-400, linear-gradient(90deg, #50c577 0%, #2dbefc 100%));
-  color: black;
 }
 
 .divs hover {
@@ -446,4 +445,32 @@ details {
 h3 {
   padding-right: 1rem;
   padding-left: 1rem;
+}
+
+.anhbogoc img {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.Swiper2 {
+  margin-left: 1rem !important;
+  margin-right: 1rem !important;
+}
+
+@keyframes inputFocus {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.02);
+  } /* Optional subtle zoom effect on focus */
+}
+
+@keyframes inputBlur {
+  from {
+    transform: scale(1.02);
+  } /* Optional subtle zoom effect on blur */
+  to {
+    transform: scale(1);
+  }
 }

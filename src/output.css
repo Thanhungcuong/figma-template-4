@@ -619,6 +619,10 @@ video {
   bottom: 50%;
 }
 
+.bottom-\[1\%\]{
+  bottom: 1%;
+}
+
 .left-0{
   left: 0px;
 }
@@ -659,6 +663,10 @@ video {
   right: 40%;
 }
 
+.right-\[5\%\]{
+  right: 5%;
+}
+
 .top-0{
   top: 0px;
 }
@@ -671,6 +679,10 @@ video {
   top: 30%;
 }
 
+.top-\[36\%\]{
+  top: 36%;
+}
+
 .top-\[40\%\]{
   top: 40%;
 }
@@ -681,6 +693,14 @@ video {
 
 .top-\[54\%\]{
   top: 54%;
+}
+
+.-bottom-\[5\%\]{
+  bottom: -5%;
+}
+
+.-bottom-\[10\%\]{
+  bottom: -10%;
 }
 
 .-z-10{
@@ -709,6 +729,14 @@ video {
 
 .z-50{
   z-index: 50;
+}
+
+.-z-50{
+  z-index: -50;
+}
+
+.z-0{
+  z-index: 0;
 }
 
 .row-span-2{
@@ -959,6 +987,10 @@ video {
 
 .w-\[88\%\]{
   width: 88%;
+}
+
+.w-\[90\%\]{
+  width: 90%;
 }
 
 .w-fit{
@@ -1290,10 +1322,6 @@ video {
   padding-top: 3.5rem;
 }
 
-.pt-\[8rem\]{
-  padding-top: 8rem;
-}
-
 .text-left{
   text-align: left;
 }
@@ -1474,7 +1502,7 @@ body {
 
 body {
   background: #eee;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato";
   font-size: 14px;
   color: #000;
   margin: 0;
@@ -1713,7 +1741,6 @@ input[type="date"]:focus {
 
 .orangebutton:hover {
   background: var(--dd-400, linear-gradient(90deg, #50c577 0%, #2dbefc 100%));
-  color: black;
 }
 
 .divs hover {
@@ -1917,6 +1944,40 @@ h3 {
   padding-left: 1rem;
 }
 
+.anhbogoc img {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.Swiper2 {
+  margin-left: 1rem !important;
+  margin-right: 1rem !important;
+}
+
+@keyframes inputFocus {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.02);
+  }
+
+  /* Optional subtle zoom effect on focus */
+}
+
+@keyframes inputBlur {
+  from {
+    transform: scale(1.02);
+  }
+
+  /* Optional subtle zoom effect on blur */
+
+  to {
+    transform: scale(1);
+  }
+}
+
 @media not all and (min-width: 1024px){
   .max-lg\:container{
     width: 100%;
@@ -2039,19 +2100,27 @@ h3 {
   }
 }
 
-.hover\:bg-black:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-white:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-orangee:hover{
+  background-image: linear-gradient(180deg, #FFB469 0%, #E57709 100%);
+}
+
 .hover\:text-black:hover{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.hover\:text-green-300:hover{
+  --tw-text-opacity: 1;
+  color: rgb(134 239 172 / var(--tw-text-opacity));
+}
+
+.hover\:opacity-70:hover{
+  opacity: 0.7;
 }
 
 .focus\:shadow-none:focus{
@@ -2069,6 +2138,10 @@ h3 {
     margin-top: 0.75rem;
   }
 
+  .max-2xl\:hidden{
+    display: none;
+  }
+
   .max-2xl\:w-\[10rem\]{
     width: 10rem;
   }
@@ -2083,6 +2156,10 @@ h3 {
 }
 
 @media not all and (min-width: 1280px){
+  .max-xl\:top-1\/2{
+    top: 50%;
+  }
+
   .max-xl\:mx-auto{
     margin-left: auto;
     margin-right: auto;
@@ -2136,6 +2213,10 @@ h3 {
 
   .max-xl\:flex-col{
     flex-direction: column;
+  }
+
+  .max-xl\:p-6{
+    padding: 1.5rem;
   }
 
   .max-xl\:px-16{
@@ -2246,6 +2327,10 @@ h3 {
   .max-md\:flex-wrap{
     flex-wrap: wrap;
   }
+
+  .max-md\:justify-center{
+    justify-content: center;
+  }
 }
 
 @media not all and (min-width: 640px){
@@ -2293,8 +2378,8 @@ h3 {
     display: none;
   }
 
-  .max-sm\:h-\[15\%\]{
-    height: 15%;
+  .max-sm\:h-\[19\%\]{
+    height: 19%;
   }
 
   .max-sm\:h-\[30rem\]{
@@ -2305,24 +2390,24 @@ h3 {
     height: 3rem;
   }
 
-  .max-sm\:h-\[48rem\]{
-    height: 48rem;
+  .max-sm\:h-\[44rem\]{
+    height: 44rem;
   }
 
   .max-sm\:h-\[5rem\]{
     height: 5rem;
   }
 
-  .max-sm\:h-\[60rem\]{
-    height: 60rem;
+  .max-sm\:h-\[63rem\]{
+    height: 63rem;
   }
 
   .max-sm\:w-\[3rem\]{
     width: 3rem;
   }
 
-  .max-sm\:w-\[60\%\]{
-    width: 60%;
+  .max-sm\:w-\[46\%\]{
+    width: 46%;
   }
 
   .max-sm\:w-\[86\%\]{
@@ -2347,10 +2432,6 @@ h3 {
 
   .max-sm\:items-center{
     align-items: center;
-  }
-
-  .max-sm\:justify-center{
-    justify-content: center;
   }
 
   .max-sm\:justify-around{
@@ -2381,6 +2462,16 @@ h3 {
 
   .max-sm\:text-center{
     text-align: center;
+  }
+
+  .max-sm\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .max-sm\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .max-sm\:text-sm{
@@ -2431,6 +2522,10 @@ h3 {
 
   .sm\:pt-\[15rem\]{
     padding-top: 15rem;
+  }
+
+  .sm\:pt-\[8rem\]{
+    padding-top: 8rem;
   }
 
   .sm\:odd\:mb-12:nth-child(odd){
@@ -2508,6 +2603,10 @@ h3 {
     margin-bottom: 1.25rem;
   }
 
+  .xl\:mr-auto{
+    margin-right: auto;
+  }
+
   .xl\:mt-28{
     margin-top: 7rem;
   }
@@ -2520,12 +2619,12 @@ h3 {
     display: none;
   }
 
-  .xl\:w-1\/2{
-    width: 50%;
+  .xl\:w-\[45\%\]{
+    width: 45%;
   }
 
-  .xl\:w-1\/5{
-    width: 20%;
+  .xl\:w-\[55\%\]{
+    width: 55%;
   }
 
   .xl\:py-0{
