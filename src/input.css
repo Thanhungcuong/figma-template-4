@@ -553,7 +553,6 @@ h3 {
   color: #999;
   font-size: 16px;
   display: inline-block;
-  padding: 4px 10px;
   font-weight: 400;
   background-color: rgba(255, 255, 255, 0);
   transition: color 0.3s, top 0.3s, background-color 0.8s;
@@ -569,7 +568,6 @@ h3 {
 
 .controls textarea {
   resize: none;
-  height: 200px;
 }
 
 .clear:after {
