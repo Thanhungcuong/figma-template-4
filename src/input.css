@@ -2,6 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 html,
 body {
   position: relative;
@@ -169,17 +170,6 @@ input[type="date"]:focus {
   outline-offset: 0;
   box-shadow: none;
   border-color: #2891cc;
-}
-
-.form2 label {
-  color: var(--dd-mau-logo, #2891cc);
-  /* Body/Roboto/Label */
-  font-family: Roboto;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 16px; /* 133.333% */
-  letter-spacing: 0.4px;
 }
 
 .div-top {
@@ -447,14 +437,19 @@ h3 {
   padding-left: 1rem;
 }
 
+.container p.pnotpa {
+  padding-right: 0;
+  padding-left: 0;
+}
+
 .anhbogoc img {
   border-radius: 10px;
   overflow: hidden;
 }
 
 .Swiper2 {
-  margin-left: 1rem !important;
-  margin-right: 1rem !important;
+  margin-left: 2.5rem !important;
+  margin-right: 2.5rem !important;
 }
 
 @keyframes inputFocus {
@@ -473,4 +468,112 @@ h3 {
   to {
     transform: scale(1);
   }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.info-text {
+  text-align: left;
+  width: 100%;
+}
+
+.controls {
+  text-align: left;
+  position: relative;
+}
+
+.controls input[type="text"],
+.controls input[type="email"],
+.controls input[type="number"],
+.controls input[type="date"],
+.controls input[type="tel"],
+.controls textarea,
+.controls select {
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ebebeb;
+  width: 100%;
+  height: 55%;
+  color: #888;
+  font-family: "Lato", "sans-serif";
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.controls input[type="text"]:focus,
+.controls input[type="text"]:hover,
+.controls input[type="email"]:focus,
+.controls input[type="email"]:hover,
+.controls input[type="number"]:focus,
+.controls input[type="number"]:hover,
+.controls input[type="date"]:focus,
+.controls input[type="date"]:hover,
+.controls input[type="tel"]:focus,
+.controls input[type="tel"]:hover,
+.controls textarea:focus,
+.controls textarea:hover,
+.controls select:focus,
+.controls select:hover {
+  outline: none;
+  border-color: #3bb6fb;
+}
+
+.controls input[type="text"]:focus + label,
+.controls input[type="text"]:hover + label,
+.controls input[type="email"]:focus + label,
+.controls input[type="email"]:hover + label,
+.controls input[type="number"]:focus + label,
+.controls input[type="number"]:hover + label,
+.controls input[type="date"]:focus + label,
+.controls input[type="date"]:hover + label,
+.controls input[type="tel"]:focus + label,
+.controls input[type="tel"]:hover + label,
+.controls textarea:focus + label,
+.controls textarea:hover + label,
+.controls select:focus + label,
+.controls select:hover + label {
+  color: #3bb6fb;
+  cursor: text;
+}
+
+.controls select {
+  appearance: none;
+  cursor: pointer;
+}
+
+.controls label {
+  position: absolute;
+  left: 8px;
+  top: 12px;
+  width: 60%;
+  color: #999;
+  font-size: 16px;
+  display: inline-block;
+  padding: 4px 10px;
+  font-weight: 400;
+  background-color: rgba(255, 255, 255, 0);
+  transition: color 0.3s, top 0.3s, background-color 0.8s;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.controls label.active {
+  top: -18px;
+  color: #555;
+  background-color: rgba(255, 255, 255, 1);
+  width: auto;
+}
+
+.controls textarea {
+  resize: none;
+  height: 200px;
+}
+
+.clear:after {
+  content: "";
+  display: table;
+  clear: both;
 }
