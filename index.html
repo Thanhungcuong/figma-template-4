@@ -261,16 +261,16 @@
           <img src="public/icondau+.png" alt="dau +" />
         </div>
         <div
-          class="container pl-10 max-sm:pr-10 mx-auto flex max-md:flex-col justify-around xl:mt-28"
+          class="container sm:pl-10 mx-auto flex max-lg:flex-col justify-around xl:mt-28"
         >
-          <div class="md:w-[45%]">
+          <div class="lg:w-[45%]">
             <p
-              class="lg:w-2/3 mr-auto font-bold text-4xl max-sm:text-2xl text-[#252525]"
+              class="lg:w-2/3 mr-auto font-bold text-4xl max-lg:text-2xl max-lg:pb-5 text-[#252525]"
             >
               Tầm quan trọng của việc sử dụng kính Ortho-K
             </p>
           </div>
-          <div class="md:w-1/2">
+          <div class="lg:w-1/2">
             <p
               class="font-normal text-base text-[#454545] sm:w-[86%] max-sm:mt-4"
             >
@@ -411,7 +411,7 @@
           <img src="public/socxanh1.png" alt="socxanh1" />
         </div>
 
-        <div class="container mx-auto flex flex-col p-10">
+        <div class="container mx-auto flex flex-col sm:p-10">
           <div class="2xl:w-[44%] mb-12">
             <p class="font-bold text-4xl max-sm:text-2xl text-[#252525]">
               Ai nên sử dụng kính Ortho-K?
@@ -426,10 +426,12 @@
         <!-- swiper trên dưới -->
         <div class="relative">
           <!-- div nền -->
-          <div class="absolute divbg right-[22%] bottom-1/2 -z-40"></div>
+          <div
+            class="absolute divbg right-[22%] bottom-1/2 -z-40 max-xl:hidden"
+          ></div>
           <!--prev, next button-->
           <div
-            class="flex justify-center gap-10 absolute right-[14%] -top-[10%] -translate-y-[50%]"
+            class="flex justify-center gap-10 sm:absolute right-[14%] -top-[10%] -translate-y-[50%]"
           >
             <div
               class="group prev-11 static bg-white buttons rounded-full size-14 flex justify-center items-center stroke-[#6FCF97]"
@@ -1698,27 +1700,37 @@
             <div thumbsSlider="" class="swiper SwiperT1 my-6">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <p class="font-semibold text-lg text-[#888888]">
+                  <p
+                    class="font-semibold text-lg text-[#888888] cursor-pointer"
+                  >
                     ORTHO K - 01
                   </p>
                 </div>
                 <div class="swiper-slide">
-                  <p class="font-semibold text-lg text-[#888888]">
+                  <p
+                    class="font-semibold text-lg text-[#888888] cursor-pointer"
+                  >
                     ORTHO K - 02
                   </p>
                 </div>
                 <div class="swiper-slide">
-                  <p class="font-semibold text-lg text-[#888888]">
+                  <p
+                    class="font-semibold text-lg text-[#888888] cursor-pointer"
+                  >
                     ORTHO K - 03
                   </p>
                 </div>
                 <div class="swiper-slide">
-                  <p class="font-semibold text-lg text-[#888888]">
+                  <p
+                    class="font-semibold text-lg text-[#888888] cursor-pointer"
+                  >
                     ORTHO K - 04
                   </p>
                 </div>
                 <div class="swiper-slide">
-                  <p class="font-semibold text-lg text-[#888888]">
+                  <p
+                    class="font-semibold text-lg text-[#888888] cursor-pointer"
+                  >
                     ORTHO K - 05
                   </p>
                 </div>
@@ -1859,9 +1871,9 @@
         </div>
       </div>
     </div>
-    <footer class="h-[30rem] max-sm:h-[63rem] flex items-center">
+    <footer class="h-[30rem] max-lg:h-fit max-lg:py-5 flex items-center">
       <div
-        class="xl:flex max-xl:w-11/12 md:grid md:gap-16 max-sm:my-6 max-sm:flex max-sm:flex-col max-sm:gap-10 md:grid-cols-2 justify-between items-center container my-auto mx-auto text-white"
+        class="xl:flex max-xl:w-11/12 md:grid md:gap-16 max-sm:my-6 max-sm:flex-col max-sm:gap-10 md:grid-cols-2 justify-between items-center container my-auto mx-auto text-white"
       >
         <div class="flex-col">
           <div><img src="public/Logofooter.png" alt="Logofooter" /></div>
@@ -1874,7 +1886,7 @@
             id cursus hendreritenim ultricies
           </p>
         </div>
-        <div class="flex-col max-sm:w-full">
+        <div class="flex-col">
           <p class="font-bold text-xl">Thông tin liên hệ</p>
           <div class="flex gap-1 mt-6 mb-3">
             <p class="font-normal text-base text-nowrap">Địa chỉ:</p>
@@ -1882,18 +1894,18 @@
               Số 9, Phố Viên, P. Cổ Nhuế 2, Q. Bắc Từ Liêm, HN
             </p>
           </div>
-          <div class="flex gap-1 my-3 max-md:flex-wrap">
+          <div class="flex gap-1 my-3 max-lg:flex-wrap">
             <p class="font-normal text-base">Email:</p>
             <a
               href="mailto:bvphuongdong@phuongdonghospital.vn"
-              class="font-bold text-base max-sm:text-sm max-sm:my-auto hover:text-green-300 duration-500 transition-all ease-in-out"
+              class="font-bold text-base max-sm:text-sm max-sm:my-auto hover:text-green-300 duration-500 transition-all ease-in-out max-lg:mx-4"
             >
               bvphuongdong@phuongdonghospital.vn
             </a>
           </div>
           <a
             href="mailto:info.benhvienphuongdong@gmail.com"
-            class="hover:text-green-300 font-bold my-3"
+            class="hover:text-green-300 font-bold my-3 mx-4"
             >info.benhvienphuongdong@gmail.com</a
           >
           <div class="flex gap-1 text-nowrap">
@@ -1905,7 +1917,7 @@
             >
           </div>
         </div>
-        <div class="flex-col flex max-sm:w-full">
+        <div class="flex-col flex">
           <p class="font-bold text-xl">Giờ làm việc</p>
           <p class="mt-6 mb-4">
             Từ <span>7:00 - 19:00</span> từ <span>Thứ 2 đến CN</span>
@@ -1936,11 +1948,11 @@
             >
           </div>
         </div>
-        <div class="flex-col max-sm:w-full">
-          <p class="font-bold text-xl">Theo dõi chúng tôi</p>
+        <div class="flex-col">
+          <p class="font-bold text-xl text-nowrap">Theo dõi chúng tôi</p>
           <div class="flex my-6 max-xl:my-10 gap-6">
             <div
-              class="iconn size-10 rounded-full bg-white hover:bg-orangee hover:opacity-70 flex justify-center items-center"
+              class="iconn size-10 rounded-full bg-white hover:bg-orangee hover:opacity-70 flex justify-center items-center ml-4"
             >
               <a href="#">
                 <img src="public/fb.svg" alt="icon fb" />
@@ -1962,7 +1974,9 @@
               </a>
             </div>
           </div>
-          <span><img src="public/bocongthuong.png" alt="bocongthuong" /></span>
+          <div class="mx-4">
+            <img src="public/bocongthuong.png" alt="bocongthuong" />
+          </div>
         </div>
       </div>
     </footer>
